@@ -1,0 +1,154 @@
+/* .slide-container
+{
+    max-width: 1120px;
+    width: 100%;
+} */
+
+.slide-content
+{
+    margin: 0 40px;
+}
+
+.card-wrapper
+{
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    width: 320px;
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.card:hover
+{
+    box-shadow: none;
+}
+
+.video-content,
+.card-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.video-content
+{
+    position: relative;
+    row-gap: 5px;
+    padding: 5px;
+}
+
+.overlay
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-primary);
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-primary);
+}
+
+.overlay::after
+{
+    border-radius: 0 25px 0 0;
+    background-color: var(--color-white);
+}
+
+.card-video
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.card-video .card-vid
+{
+    height: 100%;
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    cursor: pointer;
+    overflow: hidden;
+    object-fit: cover;
+    /* padding: 10px; */
+}
+.name-video
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.description
+{
+    font-size: 14px;
+    color: var(--color-info-dark);
+    text-align: center;
+}
+
+.popup-video
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.popup-video video
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--card-border-radius);
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+.popup-video span
+{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color:#fff;
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 768px)
+{
+    .popup-video video
+    {
+        width: 95%;
+    }
+}

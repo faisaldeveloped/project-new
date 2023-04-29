@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dashboard - user</title>
+    <!-- Material CDN Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Style Css Here -->
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+    <div class="container">
+
+        <!-- Start Aside -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="" />
+                    <h2>Saud <span class="danger">USD</span> </h2>
+                </div>
+                <div class="close" id="close_btn">
+                    <span class="material-icons">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar" id="sideBar">
+                <a href="#" class="link">
+                    <span class="material-icons">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="stocks.html" class="link">
+                    <span class="material-icons">show_chart</span>
+                    <h3>Stocks</h3>
+                </a>
+
+                <a href="Options-Futures.html" class="link">
+                    <span class="material-icons">display_settings</span>
+                    <h3>Options/Futures</h3>
+                </a>
+
+                <a href="crypto.html" class="link">
+                    <span class="material-icons"><ion-icon name="logo-bitcoin"></ion-icon></span>
+                    <h3>Crypto</h3>
+                    <!-- <span class="message_count">30</span> -->
+                </a>
+
+                <a href="educations.html" class="link">
+                    <span class="material-icons"><ion-icon name="school-outline"></ion-icon></span>
+                    <h3>Educations</h3>
+                </a>
+
+                <a href="#" class="link">
+                    <span class="material-icons"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <h3>Invite Friends</h3>
+                </a>
+
+                <a href="#" class="link">
+                    <span class="material-icons"><ion-icon name="hand-left-outline"></ion-icon></span>
+                    <h3>Subscribtions</h3>
+                </a>
+
+                <a href="#" class="link">
+                    <span class="material-icons"><ion-icon name="reader-outline"></ion-icon></span>
+                    <h3>Plan/Goals</h3>
+                </a>
+
+                <div class="sideSF">
+
+                    <div class="support">
+                        <a href="#">
+                            <span class="material-icons"><ion-icon name="help-circle-outline"></ion-icon></span>
+                            <h3>Support</h3>
+                        </a>
+                    </div>
+
+                    <div class="feedback">
+                        <a href="#">
+                            <span class="material-icons"><ion-icon name="create-outline"></ion-icon></span>
+                            <h3>Feedback</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- End Aside -->
+
+        <!-- Start Main -->
+        <main>
+            <h1>Dashboard</h1>
+
+            <!-- <div class="date">
+                <input type="date" name="" id="">
+            </div> -->
+
+            <div class="insigts">
+                <div class="sales">
+                    <span class="material-icons">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3></h3>
+                            <h1></h1>
+                        </div>
+                        <!-- <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <small class="text_muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- End Sales -->
+
+                <div class="expenses">
+                    <span class="material-icons">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3></h3>
+                            <h1></h1>
+                        </div>
+                        <!-- <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>51%</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <small class="text_muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- End Expenses -->
+
+                <div class="income">
+                    <span class="material-icons">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3></h3>
+                            <h1></h1>
+                        </div>
+                        <!-- <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>80%</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <small class="text_muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- End Income -->
+            </div>
+            <!-- End Instghts -->
+
+            <div class="technical_analysis">
+                <h2>Technical Analysis</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th> </th>
+                            <th></th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- End Main -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu_btn">
+                    <span class="material-icons">menu</span>
+                </button>
+
+                <div class="theme_toggler">
+                    <span class="material-icons active">light_mode</span>
+                    <span class="material-icons">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Faisal</b></p>
+                        <small class="text_muted">User</small>
+                    </div>
+                    <div class="porfile_photo">
+                        <img src="../images/user.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- End Top -->
+            <div class="news">
+                <h2>News</h2>
+                <div class="news_updates">
+                    <div class="update">
+                        <div class="porfile_photo">
+                            <img src="../images/user.jpg" alt="" />
+                        </div>
+                        <div class="message">
+                            <p><b>Ahmed</b> received his order of</p>
+                            <small class="text_muted">2 minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End News -->
+
+            <div class="alerts">
+                <h2>Alerts</h2>
+                <div class="alert_update">
+                    <div class="update">
+                        <div class="porfile_photo">
+                            <img src="../images/user.jpg" alt="" />
+                        </div>
+                        <div class="message">
+                            <p><b>Ahmed</b> received his order of</p>
+                            <small class="text_muted">2 minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Iconicons Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- My Script -->
+    <script src="../js/index.js"></script>
+</body>
+</html>
